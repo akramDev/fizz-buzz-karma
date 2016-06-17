@@ -1,0 +1,25 @@
+{
+  "name": "fizz-buzz-karma",
+  "version": "1.0.0",
+  "description": "fizz buzz with karma and jasmine",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js --singleRun true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akramDev/fizz-buzz-karma.git"
+  },
+  "author": "akram moncer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akramDev/fizz-buzz-karma/issues"
+  },
+  "homepage": "https://github.com/akramDev/fizz-buzz-karma#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2"
+  }
+}
