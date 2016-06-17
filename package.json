@@ -4,7 +4,8 @@
   "description": "fizz buzz with karma and jasmine",
   "main": "index.js",
   "scripts": {
-    "test": "karma start karma.conf.js --singleRun true"
+    "test": "grunt karma",
+    "continuous": "grunt karma:continuous"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/akramDev/fizz-buzz-karma#readme",
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-karma": "^2.0.0",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^1.0.1",
