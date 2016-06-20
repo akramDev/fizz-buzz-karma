@@ -37,3 +37,28 @@ describe('A fizzbuzz unit test suite', function () {
     })
     
 });
+
+describe('A collection of sinon tests with jasmine', function () {
+
+    it('calls the original function', function () {
+        var callback = sinon.spy()
+        var proxy = once(callback)
+        proxy()
+        expect(callback.called).toBe(true)
+    })
+    
+    it('call the original function only once', function () {
+        var callback = sinon.spy()
+        var proxy = once(callback)
+        proxy()
+        proxy()
+        expect(callback.calledOnce).toBe(true)
+        //expect(callback.callCount).toBe(1)
+    })
+
+    it('stubs to return value of the returned function', function () {
+        var callback = sinon.stub().returns(42)
+        var proxy = once(callback)
+        expect(proxy()).toEqual(42)
+    })
+});
